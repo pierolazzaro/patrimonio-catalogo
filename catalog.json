@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "version": "2026-10-06",
+  "verified": "2026-10-06",
+  "notes": "Tassi annui lordi. Fonti: poste.it, buonielibretti.poste.it, postevita.poste.it, cdp.it. Solo dati pubblici dei prodotti: nessun dato personale.",
+  "sources": [
+    "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-22-settembre-2026.pdf",
+    "https://buonielibretti.poste.it/buoni-fruttiferi-postali",
+    "https://postevita.poste.it/soluzioni-investimento-assicurativo"
+  ],
+  "rules": {
+    "librettoStamp": { "amount": 34.20, "threshold": 5000 },
+    "bfpStamp": { "rate": 0.002, "threshold": 5000 },
+    "librettoBaseRate": 0.00001
+  },
+  "products": [
+    {
+      "id": "libretto", "group": "Libretti e conti", "name": "Libretto Smart", "cat": "Conto e libretto",
+      "model": "libretto", "rate": 0.00001, "rateLabel": "0,001%", "termDays": 0, "tax": 0.26,
+      "what": "Il libretto di risparmio postale. È la base: ci arrivano i soldi, da qui si comprano buoni e depositi Supersmart, da qui si preleva.",
+      "early": "Si preleva quando si vuole, allo sportello, all'ATM Postamat o con giroconto.",
+      "guar": "Garantito dallo Stato tramite Cassa Depositi e Prestiti.",
+      "req": "Maggiorenne; gratuito.",
+      "taxText": "Interessi al 26%. Bollo di 34,20 € l'anno se la giacenza media di tutti i libretti supera 5.000 €.",
+      "fit": "La riserva per spese correnti ed emergenze. Rende quasi zero: conviene tenerci solo quanto serve davvero.",
+      "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
+    },
+    {
+      "id": "conto", "group": "Libretti e conti", "name": "Conto BancoPosta", "cat": "Conto corrente",
+      "model": "conto", "rate": 0, "rateLabel": "—", "termDays": 0, "tax": 0.26,
+      "what": "Conto corrente postale con carta, bonifici e domiciliazione delle bollette.",
+      "early": "Liquidità immediata.",
+      "guar": "Fondo Interbancario di Tutela dei Depositi fino a 100.000 € per intestatario.",
+      "req": "Canone secondo l'offerta scelta.",
+      "taxText": "Bollo di 34,20 € l'anno se la giacenza media supera 5.000 €.",
+      "fit": "Serve per carta, bonifici e addebiti. Per tenere da parte i risparmi il libretto costa meno.",
+      "url": "https://www.poste.it/prodotti/conti-correnti.html"
+    },
+    {
+      "id": "ss-pensione", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Pensione", "cat": "Supersmart",
+      "model": "supersmart", "rate": 0.0325, "rateLabel": "3,25%", "termDays": 364, "tax": 0.26, "min": 500,
+      "eligibility": { "pension": true },
+      "what": "Una parte del Libretto Smart viene accantonata per 364 giorni a un tasso più alto.",
+      "early": "Svincolabile prima: il capitale torna tutto sul libretto, ma per quel periodo si riceve solo il tasso base (0,001%).",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Pensione INPS accreditata su Poste. Minimo 500 €, multipli di 50 €.",
+      "taxText": "Interessi al 26%.",
+      "fit": "Se la pensione arriva su Poste è tra le offerte più alte per un anno, senza rischio sul capitale.",
+      "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
+    },
+    {
+      "id": "ss-open", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Open", "cat": "Supersmart",
+      "model": "supersmart", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 360, "tax": 0.26, "min": 50,
+      "what": "Accantonamento sul Libretto Smart aperto a tutti i maggiorenni.",
+      "early": "Svincolabile in qualsiasi momento: capitale intatto, ma si perde il tasso promozionale.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Maggiorenne con Libretto Smart.",
+      "taxText": "Interessi al 26%.",
+      "fit": "Alternativa senza requisiti se non si ha diritto alle offerte Pensione o Premium.",
+      "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
+    },
+    {
+      "id": "ss-rinnova", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Rinnova", "cat": "Supersmart",
+      "model": "supersmart", "rate": 0.025, "rateLabel": "2,50%", "termDays": 540, "tax": 0.26,
+      "eligibility": { "reinvest": true },
+      "what": "Accantonamento per reinvestire somme provenienti da offerte o buoni scaduti (es. Buono Premium).",
+      "early": "Svincolabile: capitale intatto, interessi al tasso base.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Riservato a chi reinveste somme da prodotti scaduti: verificare allo sportello.",
+      "taxText": "Interessi al 26%.",
+      "fit": "Da valutare alla scadenza del Buono Premium o di un Supersmart.",
+      "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
+    },
+    {
+      "id": "bfp-premium", "group": "Buoni fruttiferi postali", "name": "Buono Premium", "cat": "Buoni postali", "series": "TF101A260922",
+      "model": "bullet", "rate": 0.0325, "rateLabel": "3,25%", "termDays": 365, "tax": 0.125, "min": 50,
+      "deadline": "2026-11-05",
+      "eligibility": { "newMoney": { "from": "2026-09-18", "to": "2026-11-05" } },
+      "what": "Buono di un anno a tasso fisso, in forma elettronica sul libretto.",
+      "early": "Rimborsabile in qualsiasi momento senza penali: torna il capitale, ma senza interessi se non si arriva all'anno.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Nuova liquidità accreditata su libretto tra il 18 settembre e il 5 novembre 2026 (bonifici, assegni, pensione). Sottoscrizione entro il 5 novembre 2026, salvo chiusura anticipata.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
+      "fit": "Se l'eredità arriva sul libretto in queste settimane è il rendimento più alto a breve con capitale sempre ritirabile.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-premium"
+    },
+    {
+      "id": "bfp-eredita", "group": "Buoni fruttiferi postali", "name": "Buono Soluzione Eredità", "cat": "Buoni postali", "series": "TF404A260922",
+      "model": "bullet", "rate": 0.03, "rateLabel": "3,00%", "termDays": 1461, "tax": 0.125, "min": 50,
+      "eligibility": { "inheritance": true },
+      "what": "Buono per chi riceve un'eredità gestita da Poste (successione su libretti, conti o buoni postali del defunto).",
+      "early": "Rimborsabile anche in parte in ogni momento, senza costi: prima dei 4 anni torna solo il capitale.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Beneficiari di una successione presso Poste; solo allo sportello con la documentazione della successione.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
+      "fit": "Pensato per le somme ereditate: tasso più alto dei buoni ordinari per chi può tenerle 4 anni.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-soluzione-eredita"
+    },
+    {
+      "id": "bfp-4plus", "group": "Buoni fruttiferi postali", "name": "Buono 4 anni Plus", "cat": "Buoni postali", "series": "TF504A260922",
+      "model": "bullet", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 1461, "tax": 0.125, "min": 50,
+      "what": "Buono a tasso fisso di 4 anni, senza requisiti particolari.",
+      "early": "Rimborsabile in ogni momento, anche in parte (multipli di 50 €): prima dei 4 anni torna solo il capitale.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Maggiorenne; da 50 €. Online o allo sportello.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
+      "fit": "Per la parte che quasi certamente non servirà per 4 anni.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-4-anni-plus"
+    },
+    {
+      "id": "bfp-ordinario", "group": "Buoni fruttiferi postali", "name": "Buono Ordinario", "cat": "Buoni postali", "series": "TF120A250624",
+      "model": "coeff", "rate": 0.025, "rateLabel": "fino al 2,50%", "termDays": 7305, "tax": 0.125, "min": 50,
+      "coeff": [1.0075, 1.01505625, 1.02266917, 1.03033919, 1.04579428, 1.06409568, 1.08271735, 1.1043717, 1.12922006, 1.15745056,
+                1.18638683, 1.2160465, 1.25252789, 1.29511384, 1.34044283, 1.38735833, 1.44285266, 1.50056677, 1.56058944, 1.63861891],
+      "what": "Il buono classico: gli interessi crescono ogni anno e si incassano quando lo si rimborsa.",
+      "early": "Rimborsabile in ogni momento, anche in parte. Dopo il primo anno si ricevono gli interessi maturati (0,75% annuo nei primi 4 anni, crescente fino al 2,50% a 20 anni); prima di un anno solo il capitale.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Maggiorenne; da 50 €.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
+      "fit": "Il più flessibile tra i buoni: dopo un anno si ritira qualsiasi somma senza perdere gli interessi maturati. Rende meno nei primi anni.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-ordinario"
+    },
+    {
+      "id": "bfp-cedola", "group": "Buoni fruttiferi postali", "name": "Buono a Cedola 8 anni", "cat": "Buoni postali", "series": "TC008A260922",
+      "model": "cedola", "rate": 0.0246, "rateLabel": "2,46%", "termDays": 2922, "tax": 0.125, "min": 1000,
+      "coupons": [0.01, 0.0125, 0.015, 0.0175, 0.02, 0.0225, 0.025, 0.08],
+      "what": "Paga interessi ogni sei mesi sul libretto, con tassi crescenti; l'ultimo anno è all'8%.",
+      "early": "Rimborsabile in ogni momento: si perde la cedola in corso; entro 6 mesi nessun interesse. Rimborsi parziali se restano almeno 1.000 €.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Maggiorenne; minimo 1.000 €.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione.",
+      "fit": "Rende di più solo se tenuto fino alla fine: adatto a una parte che non serve per 8 anni.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-a-cedola-8-anni"
+    },
+    {
+      "id": "bfp-inflazione", "group": "Buoni fruttiferi postali", "name": "Buono Indicizzato all'Inflazione", "cat": "Buoni postali", "series": "IL110A240307",
+      "model": "inflazione", "rate": 0.006, "rateLabel": "0,60% + inflazione", "termDays": 3652, "tax": 0.125, "min": 50,
+      "what": "Il capitale viene rivalutato con l'inflazione italiana, più un piccolo tasso fisso.",
+      "early": "Rimborsabile in ogni momento: prima di 18 mesi torna solo il capitale, dopo anche la rivalutazione maturata.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Maggiorenne; da 50 €.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione.",
+      "fit": "Protegge il potere d'acquisto nel lungo periodo. Le proiezioni dipendono dall'inflazione ipotizzata.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-inflazione"
+    },
+    {
+      "id": "bfp-3x4", "group": "Buoni fruttiferi postali", "name": "Buono Rinnova 3x4 con premio", "cat": "Buoni postali", "series": "TF312A260922",
+      "model": "step", "rate": 0.0346, "rateLabel": "3,46% con premio", "termDays": 4383, "tax": 0.125, "min": 50,
+      "steps": [[3, 0.01], [6, 0.015], [9, 0.02], [12, 0.025]], "bonus": 0.16,
+      "eligibility": { "reinvest": true },
+      "what": "Buono di 12 anni con interessi crescenti ogni 3 anni e premio del 16% a scadenza.",
+      "early": "Rimborsabile in ogni momento senza costi, ma prima dei 3 anni solo capitale e il premio si ottiene solo a scadenza.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Solo con somme da buoni postali rimborsati o scaduti dal 1° gennaio 2026 o da Supersmart chiusi.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione.",
+      "fit": "Orizzonte molto lungo: poco adatto se servono uscite regolari.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-rinnova-3x4-con-premio"
+    },
+    {
+      "id": "pv-solidita", "group": "Polizze vita Poste Vita", "name": "Poste Valore Solidità Più II", "cat": "Polizze vita",
+      "model": "polizza", "rate": 0.017, "rateLabel": "variabile", "termDays": 5479, "tax": 0.26, "min": 5000,
+      "load": 0.023, "fee": 0.013, "gestAssumed": 0.03, "surrender": [0.02, 0.015, 0.01],
+      "what": "Polizza vita di Ramo I a premio unico: investe in gestioni separate prudenti e permette di indicare i beneficiari.",
+      "early": "Riscattabile dopo 30 giorni, anche in parte. Penale dal 2% all'1% fino al 3° anno, poi nessuna. Il capitale è garantito solo alla scadenza.",
+      "guar": "Capitale garantito a scadenza (al netto dei riscatti). Garanzia della compagnia, non dello Stato.",
+      "req": "Contraente fino a 85 anni; premio da 5.000 €. Costo d'ingresso fino al 2,30%, commissione annua 1,30% trattenuta sul rendimento.",
+      "taxText": "Rendimenti tassati fino al 26% (meno per la parte in titoli di Stato). Somme ai beneficiari esenti da imposta di successione.",
+      "fit": "Utile soprattutto per scegliere i beneficiari e per i vantaggi successori. Per la liquidità d'emergenza è meno adatta dei buoni per costi e penali.",
+      "url": "https://postevita.poste.it/soluzioni-investimento-assicurativo/poste-valore-solidita-piu-ii"
+    }
+  ]
+}
