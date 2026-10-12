@@ -1,10 +1,11 @@
 {
   "schema": 1,
-  "version": "2026-10-06",
-  "verified": "2026-10-06",
+  "version": "2026-10-12",
+  "verified": "2026-10-12",
   "notes": "Tassi annui lordi. Fonti: poste.it, buonielibretti.poste.it, postevita.poste.it, cdp.it. Solo dati pubblici dei prodotti: nessun dato personale.",
   "sources": [
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-22-settembre-2026.pdf",
+    "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-29-settembre-2026.pdf",
     "https://buonielibretti.poste.it/buoni-fruttiferi-postali",
     "https://postevita.poste.it/soluzioni-investimento-assicurativo"
   ],
@@ -50,25 +51,25 @@
     },
     {
       "id": "ss-open", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Open", "cat": "Supersmart",
-      "model": "supersmart", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 360, "tax": 0.26, "min": 50,
+      "model": "supersmart", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 360, "tax": 0.26, "min": 500,
       "what": "Accantonamento sul Libretto Smart aperto a tutti i maggiorenni.",
       "early": "Svincolabile in qualsiasi momento: capitale intatto, ma si perde il tasso promozionale.",
       "guar": "Garantito dallo Stato (CDP).",
-      "req": "Maggiorenne con Libretto Smart.",
+      "req": "Maggiorenne con Libretto Smart. Minimo 500 €, multipli di 50 €.",
       "taxText": "Interessi al 26%.",
       "fit": "Alternativa senza requisiti se non si ha diritto alle offerte Pensione o Premium.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
     {
       "id": "ss-rinnova", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Rinnova", "cat": "Supersmart",
-      "model": "supersmart", "rate": 0.025, "rateLabel": "2,50%", "termDays": 540, "tax": 0.26,
+      "model": "supersmart", "rate": 0.025, "rateLabel": "2,50%", "termDays": 540, "tax": 0.26, "min": 500,
       "eligibility": { "reinvest": true },
-      "what": "Accantonamento per reinvestire somme provenienti da offerte o buoni scaduti (es. Buono Premium).",
+      "what": "Accantonamento di 540 giorni per reinvestire le somme di un deposito Supersmart Premium (366 giorni) arrivato a scadenza.",
       "early": "Svincolabile: capitale intatto, interessi al tasso base.",
       "guar": "Garantito dallo Stato (CDP).",
-      "req": "Riservato a chi reinveste somme da prodotti scaduti: verificare allo sportello.",
+      "req": "Solo per somme di depositi Supersmart Premium a 366 giorni scaduti dal 1° gennaio 2026, non svincolati prima e rimaste sul libretto. Minimo 500 €, multipli di 50 €.",
       "taxText": "Interessi al 26%.",
-      "fit": "Da valutare alla scadenza del Buono Premium o di un Supersmart.",
+      "fit": "Da valutare quando scade un deposito Supersmart Premium. Non vale per il Buono Premium.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
     {
