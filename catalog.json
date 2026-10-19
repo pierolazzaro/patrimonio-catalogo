@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "2026-10-12",
-  "verified": "2026-10-12",
+  "version": "2026-10-19",
+  "verified": "2026-10-19",
   "notes": "Tassi annui lordi. Fonti: poste.it, buonielibretti.poste.it, postevita.poste.it, cdp.it. Solo dati pubblici dei prodotti: nessun dato personale.",
   "sources": [
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-22-settembre-2026.pdf",
@@ -45,7 +45,7 @@
       "early": "Svincolabile prima: il capitale torna tutto sul libretto, ma per quel periodo si riceve solo il tasso base (0,001%).",
       "guar": "Garantito dallo Stato (CDP).",
       "req": "Pensione INPS accreditata su Poste. Minimo 500 €, multipli di 50 €.",
-      "taxText": "Interessi al 26%.",
+      "taxText": "Interessi al 26%. Bollo 0,20% annuo sulle somme accantonate.",
       "fit": "Se la pensione arriva su Poste è tra le offerte più alte per un anno, senza rischio sul capitale.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
@@ -56,7 +56,7 @@
       "early": "Svincolabile in qualsiasi momento: capitale intatto, ma si perde il tasso promozionale.",
       "guar": "Garantito dallo Stato (CDP).",
       "req": "Maggiorenne con Libretto Smart. Minimo 500 €, multipli di 50 €.",
-      "taxText": "Interessi al 26%.",
+      "taxText": "Interessi al 26%. Bollo 0,20% annuo sulle somme accantonate.",
       "fit": "Alternativa senza requisiti se non si ha diritto alle offerte Pensione o Premium.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
@@ -68,7 +68,7 @@
       "early": "Svincolabile: capitale intatto, interessi al tasso base.",
       "guar": "Garantito dallo Stato (CDP).",
       "req": "Solo per somme di depositi Supersmart Premium a 366 giorni scaduti dal 1° gennaio 2026, non svincolati prima e rimaste sul libretto. Minimo 500 €, multipli di 50 €.",
-      "taxText": "Interessi al 26%.",
+      "taxText": "Interessi al 26%. Bollo 0,20% annuo sulle somme accantonate.",
       "fit": "Da valutare quando scade un deposito Supersmart Premium. Non vale per il Buono Premium.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
@@ -152,7 +152,7 @@
       "what": "Buono di 12 anni con interessi crescenti ogni 3 anni e premio del 16% a scadenza.",
       "early": "Rimborsabile in ogni momento senza costi, ma prima dei 3 anni solo capitale e il premio si ottiene solo a scadenza.",
       "guar": "Garantito dallo Stato (CDP).",
-      "req": "Solo con somme da buoni postali rimborsati o scaduti dal 1° gennaio 2026 o da Supersmart chiusi.",
+      "req": "Solo con somme rimborsate dal 1° gennaio 2026 da buoni postali scaduti (o Ordinari trentennali all'ultimo bimestre) o da depositi Supersmart arrivati a scadenza. Esclusi buoni per minori, Buono 6 mesi e 4 anni risparmiosemplice.",
       "taxText": "Interessi al 12,5%. Esente da imposta di successione.",
       "fit": "Orizzonte molto lungo: poco adatto se servono uscite regolari.",
       "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-rinnova-3x4-con-premio"
