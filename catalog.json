@@ -1,11 +1,14 @@
 {
   "schema": 1,
-  "version": "2026-11-02",
-  "verified": "2026-11-02",
+  "version": "2026-11-09",
+  "verified": "2026-11-09",
   "notes": "Tassi annui lordi. Fonti: poste.it, buonielibretti.poste.it, postevita.poste.it, cdp.it. Solo dati pubblici dei prodotti: nessun dato personale.",
   "sources": [
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-22-settembre-2026.pdf",
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-29-settembre-2026.pdf",
+    "https://www.media.poste.it/f0e2bdae-3458-45ad-a6f6-cfbf35ee67ff/file/fi-TF101A260922",
+    "https://buonielibretti.poste.it/depositi-supersmart/deposito-supersmart-pensione",
+    "https://buonielibretti.poste.it/depositi-supersmart/deposito-supersmart-plus",
     "https://buonielibretti.poste.it/buoni-fruttiferi-postali",
     "https://postevita.poste.it/soluzioni-investimento-assicurativo"
   ],
@@ -50,6 +53,17 @@
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
     },
     {
+      "id": "ss-plus", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Plus", "cat": "Supersmart",
+      "model": "supersmart", "rate": 0.035, "rateLabel": "3,50%", "termDays": 181, "tax": 0.26, "min": 500,
+      "what": "Accantonamento di 181 giorni sul Libretto Smart, riservato a chi ha l'Opzione Risparmio Smart.",
+      "early": "Svincolabile in ogni momento, anche in parte, senza costi: capitale intatto, ma per le somme svincolate si riceve solo il tasso base (0,001%).",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Libretto Smart intestato a una sola persona maggiorenne con Opzione Risparmio Smart attiva (si ottiene aprendo insieme Libretto Smart e Conto BancoPosta o Postepay Evolution; non disponibile per chi ha già un Libretto Smart a lui solo intestato). Minimo 500 €, multipli di 50 €, massimo 10.000 € per libretto.",
+      "taxText": "Interessi al 26%. Bollo 0,20% annuo sulle somme accantonate.",
+      "fit": "Il tasso più alto tra i Supersmart, ma solo per 6 mesi, fino a 10.000 € e con requisiti stretti: chi ha già un Libretto Smart di solito non può accedervi.",
+      "url": "https://buonielibretti.poste.it/depositi-supersmart/deposito-supersmart-plus"
+    },
+    {
       "id": "ss-open", "group": "Depositi Supersmart (sul Libretto Smart)", "name": "Supersmart Open", "cat": "Supersmart",
       "model": "supersmart", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 360, "tax": 0.26, "min": 500,
       "what": "Accantonamento sul Libretto Smart aperto a tutti i maggiorenni.",
@@ -71,19 +85,6 @@
       "taxText": "Interessi al 26%. Bollo 0,20% annuo sulle somme accantonate.",
       "fit": "Da valutare quando scade un deposito Supersmart Premium. Non vale per il Buono Premium.",
       "url": "https://buonielibretti.poste.it/libretti-postali/libretto-postale-smart"
-    },
-    {
-      "id": "bfp-premium", "group": "Buoni fruttiferi postali", "name": "Buono Premium", "cat": "Buoni postali", "series": "TF101A260922",
-      "model": "bullet", "rate": 0.0325, "rateLabel": "3,25%", "termDays": 365, "tax": 0.125, "min": 50,
-      "deadline": "2026-11-05",
-      "eligibility": { "newMoney": { "from": "2026-09-18", "to": "2026-11-05" } },
-      "what": "Buono di un anno a tasso fisso, in forma elettronica sul libretto.",
-      "early": "Rimborsabile in qualsiasi momento senza penali: torna il capitale, ma senza interessi se non si arriva all'anno.",
-      "guar": "Garantito dallo Stato (CDP).",
-      "req": "Nuova liquidità accreditata su libretto tra il 18 settembre e il 5 novembre 2026 (bonifici, assegni, pensione). Sottoscrizione entro il 5 novembre 2026, salvo chiusura anticipata.",
-      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
-      "fit": "Se l'eredità arriva sul libretto in queste settimane è il rendimento più alto a breve con capitale sempre ritirabile.",
-      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-premium"
     },
     {
       "id": "bfp-eredita", "group": "Buoni fruttiferi postali", "name": "Buono Soluzione Eredità", "cat": "Buoni postali", "series": "TF404A260922",
