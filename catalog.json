@@ -1,12 +1,13 @@
 {
   "schema": 1,
-  "version": "2026-11-16",
-  "verified": "2026-11-16",
+  "version": "2026-11-23",
+  "verified": "2026-11-23",
   "notes": "Tassi annui lordi. Fonti: poste.it, buonielibretti.poste.it, postevita.poste.it, cdp.it. Solo dati pubblici dei prodotti: nessun dato personale.",
   "sources": [
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-22-settembre-2026.pdf",
     "https://www.cdp.it/internet/public/cms/documents/Avviso-in-GU-del-29-settembre-2026.pdf",
-    "https://www.media.poste.it/f0e2bdae-3458-45ad-a6f6-cfbf35ee67ff/file/fi-TF101A260922",
+    "https://www.media.poste.it/063fb346-ebb7-4bea-8d11-eff5764af050/file/fi-TF004A261117",
+    "https://www.media.poste.it/cc87c26b-5e2d-4c11-99b7-844fa4ca1804/file/buoni-rinnova-3x4-premio-scheda-sintesi-TF312A261117",
     "https://buonielibretti.poste.it/depositi-supersmart/deposito-supersmart-pensione",
     "https://buonielibretti.poste.it/depositi-supersmart/deposito-supersmart-plus",
     "https://buonielibretti.poste.it/buoni-fruttiferi-postali",
@@ -99,6 +100,19 @@
       "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-soluzione-eredita"
     },
     {
+      "id": "bfp-premium4", "group": "Buoni fruttiferi postali", "name": "Buono Premium 4 anni", "cat": "Buoni postali", "series": "TF004A261117",
+      "model": "bullet", "rate": 0.04, "rateLabel": "4,00%", "termDays": 1461, "tax": 0.125, "min": 50,
+      "deadline": "2026-12-29",
+      "eligibility": { "newMoney": { "from": "2026-11-13", "to": "2026-12-29" } },
+      "what": "Buono di 4 anni a tasso fisso, solo in forma elettronica sul libretto, riservato a chi porta nuova liquidità in Poste.",
+      "early": "Rimborsabile in ogni momento, anche in parte (multipli di 50 €), senza costi: prima dei 4 anni torna solo il capitale, senza interessi.",
+      "guar": "Garantito dallo Stato (CDP).",
+      "req": "Titolari di Libretto Smart o Ordinario. Si può sottoscrivere fino all'importo della nuova liquidità arrivata dal 13 novembre al 29 dicembre 2026 (bonifici, assegni, accredito di stipendio o pensione su libretti o conti BancoPosta), al netto dei prelievi fatti nel frattempo. Sottoscrizione entro il 29 dicembre 2026, salvo chiusura anticipata. Online solo con Libretto Smart abilitato.",
+      "taxText": "Interessi al 12,5%. Esente da imposta di successione. Bollo 0,20% annuo se i buoni superano 5.000 €.",
+      "fit": "Il tasso più alto tra i buoni senza vincoli di pensione o eredità, ma solo per somme nuove e solo se si possono lasciare ferme 4 anni: ritirando prima non si guadagna nulla.",
+      "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-premium-4-anni"
+    },
+    {
       "id": "bfp-4plus", "group": "Buoni fruttiferi postali", "name": "Buono 4 anni Plus", "cat": "Buoni postali", "series": "TF504A260922",
       "model": "bullet", "rate": 0.0225, "rateLabel": "2,25%", "termDays": 1461, "tax": 0.125, "min": 50,
       "what": "Buono a tasso fisso di 4 anni, senza requisiti particolari.",
@@ -146,11 +160,11 @@
       "url": "https://buonielibretti.poste.it/buoni-fruttiferi-postali/buono-inflazione"
     },
     {
-      "id": "bfp-3x4", "group": "Buoni fruttiferi postali", "name": "Buono Rinnova 3x4 con premio", "cat": "Buoni postali", "series": "TF312A260922",
-      "model": "step", "rate": 0.0346, "rateLabel": "3,46% con premio", "termDays": 4383, "tax": 0.125, "min": 50,
-      "steps": [[3, 0.01], [6, 0.015], [9, 0.02], [12, 0.025]], "bonus": 0.16,
+      "id": "bfp-3x4", "group": "Buoni fruttiferi postali", "name": "Buono Rinnova 3x4 con premio", "cat": "Buoni postali", "series": "TF312A261117",
+      "model": "step", "rate": 0.0369, "rateLabel": "3,69% con premio", "termDays": 4383, "tax": 0.125, "min": 50,
+      "steps": [[3, 0.01], [6, 0.015], [9, 0.02], [12, 0.025]], "bonus": 0.20,
       "eligibility": { "reinvest": true },
-      "what": "Buono di 12 anni con interessi crescenti ogni 3 anni e premio del 16% a scadenza.",
+      "what": "Buono di 12 anni con interessi crescenti ogni 3 anni e premio del 20% a scadenza (serie dal 17 novembre 2026; chi ha sottoscritto la serie di settembre mantiene il premio del 16%).",
       "early": "Rimborsabile in ogni momento senza costi, ma prima dei 3 anni solo capitale e il premio si ottiene solo a scadenza.",
       "guar": "Garantito dallo Stato (CDP).",
       "req": "Solo con somme rimborsate dal 1° gennaio 2026 da buoni postali scaduti (o Ordinari trentennali all'ultimo bimestre) o da depositi Supersmart arrivati a scadenza. Esclusi buoni per minori, Buono 6 mesi e 4 anni risparmiosemplice.",
